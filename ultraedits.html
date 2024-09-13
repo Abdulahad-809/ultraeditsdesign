@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Website</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+  <style>
+    *{
+      font-family: sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+    }
+
+    .right ul {
+      display: flex;
+      justify-content: center;
+
+
+    }
+.download:nth-child(2){
+  font-size: 23px;
+
+}
+    .right ul li {
+      text-decoration: none;
+      list-style: none;
+      margin-right: 20px;
+    }
+
+    .sec-text {
+      text-align: center;
+      margin-top: 50px;
+      font-size: larger;
+      font-family: sans-serif;
+
+
+    }
+
+    .front-text {
+      font-size: x-large;
+      font-weight: 200;
+      margin-top: 70px;
+      margin-left: 80px;
+
+    }
+    .btn{
+
+    }
+
+    .img-front {
+      position: absolute;
+      margin-top: 0px;
+      margin-left: 20px;
+      height: 26px;
+    }
+
+    .text-desc {
+      text-align: center;
+      margin-left: 180px;
+      margin-right: 180px;
+      font-size: 17px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      
+    }
+   
+    .sec1-btn {
+      height: 40px;
+      color: white;
+      font-weight: 700;
+      background-color: rgb(27, 149, 231);
+      border: none;
+      padding-left: 8px;
+      padding-right: 8px;
+      border-radius: 5px;
+
+    }
+    .flex{ 
+      align-items: center;
+     display: flex;
+     
+     margin-left: auto;
+     margin-right: auto;
+     justify-content: center;
+     margin-top: 80px;
+     
+      
+    }
+    .text-small{
+      font-size: 12px;
+      
+    }
+    .sec-2{
+     
+      max-width: 70vw;
+      margin: auto;
+     
+     
+    }
+    .text-small{
+      
+      margin-top: 2px;
+      margin-right: 5px;
+
+    }
+    .green{
+      background-color: #157408;
+    }
+    .item{
+      padding: 25px;
+      background-color: #c0c4f5;
+      border-radius: 10px;
+      font-size: 20px;
+      margin-top: 14px;
+    }
+
+    .lang{
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 4px;
+    }
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr ;
+      gap: 12px;
+    }
+    .download{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+@media screen and (max-width:845){
+
+  .grid{
+      display: grid;
+      
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+}
+.footer{
+  margin-top: 70px;
+  background-color: #000000;
+  margin-left: 0;
+  margin-right: 0;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="" width="150px">
+      </div>
+      <div class="right">
+        <ul>
+          <li>Product <img
+              src="data:image/jpeg;base64,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"
+              alt="" width="24" height="12">
+          <li>Resources<img
+              src="data:image/jpeg;base64,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"
+              alt="" width="24" height="12"></li>
+          <li>About Us<img
+              src="data:image/jpeg;base64,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"
+              alt="" width="24" height="12"></li>
+          <li>Pricing<img
+              src="data:image/jpeg;base64,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"
+              alt="" width="24" height="12"></li>
+
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section class="front-text">
+        <span class="sec-text">
+          <p>
+            Download <b class="ultraedit-text">UltraEdit</b>for Windows<img
+              src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="" class="img-front">
+          </p>
+          <p class="text-desc">Download and try UltraEdit before you buy it! This download includes the full Windows
+            version of the text editor.</p>
+          <div class="sec-btn">
+            <button class="sec1-btn">DOWNLOAD MAC OR LINUX VERSION</button>
+          </div>
+        </span>
+      </section>
+      <section class="sec-2">
+        <div class="flex download">
+          <img src="	https://www.ultraedit.com/wp-content/uploads/2023/01/UE_logo_icon_white.png" alt="" width="30px" class="img-sec2">
+          <div class="big-text">Download UltraEdit&ensp;</div>
+          <div class="text-small"> v2024.1(released 2024-08-27) | Hotfix information (2024-08-18)
+          </div>
+        </div>
+        <div class="grid">
+          <div class="item">
+            <div class="lang">English</div>
+            <button class="btn blue sec1-btn">Download 32 bit</button>
+          <button class="green sec1-btn">Download 64 bit</button>
+       
+          </div>
+          <div class="item">
+            <div class="lang">English</div>
+            <button class="btn blue sec1-btn">Download 32 bit</button>
+          <button class="green sec1-btn">Download 64 bit</button>
+       
+          </div>
+          <div class="item">
+            <div class="lang">English</div>
+            <button class="btn blue sec1-btn">Download 32 bit</button>
+          <button class="green sec1-btn">Download 64 bit</button>
+       
+          </div>
+          <div class="item">
+            <div class="lang">English</div>
+            <button class="btn blue sec1-btn">Download 32 bit</button>
+          <button class="green sec1-btn">Download 64 bit</button>
+       
+          </div>
+          <div class="item">
+            <div class="lang">English</div>
+            <button class="btn blue sec1-btn">Download 32 bit</button>
+          <button class="green sec1-btn">Download 64 bit</button>
+       
+          </div>
+          <div class="item">
+            <div class="lang">English</div>
+            <button class="btn blue sec1-btn">Download 32 bit</button>
+          <button class="green sec1-btn">Download 64 bit</button>
+       
+          </div>
+          <div class="item">
+            <div class="lang">English</div>
+            <button class="btn blue sec1-btn">Download 32 bit</button>
+          <button class="green sec1-btn">Download 64 bit</button>
+       
+          </div>
+          <div class="item">
+            <div class="lang">English</div>
+            <button class="btn blue sec1-btn">Download 32 bit</button>
+          <button class="green sec1-btn">Download 64 bit</button>
+       
+          </div>
+          <div class="item">
+            <div class="lang">Tamil</div>
+            <button class="btn blue sec1-btn">Download 32 bit</button>
+          <button class="green sec1-btn">Download 64 bit</button>
+       
+          </div>
+          <div class="item">
+            <div class="lang">French</div>
+            <button class="btn blue sec1-btn">Download 32 bit</button>
+          <button class="green sec1-btn">Download 64 bit</button>
+       
+          </div>
+          <div class="item">
+            <div class="lang">Urdu</div>
+            <button class="btn blue sec1-btn">Download 32 bit</button>
+          <button class="green sec1-btn">Download 64 bit</button>
+       
+          </div>
+          <div class="item">
+            <div class="lang">Hindi</div>
+            <button class="btn blue sec1-btn">Download 32 bit</button>
+          <button class="green sec1-btn">Download 64 bit</button>
+       
+          </div>
+          
+
+           </div>
+      </section>
+      <footer>
+       <div class="footer">
+        © Abdul Ahad
+       </div>
+
+      </footer>
+
+    </main>
+  </header>
+
+</body>
+
+</html>
